@@ -19,7 +19,7 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="flex items-center justify-center h-screen">
+    <div style="padding: 20px;" class="flex items-center justify-center h-screen">
         <div class="bg-white p-8 shadow-md rounded-lg max-w-md w-full">
 
             <!-- Signup Form-->
@@ -44,6 +44,10 @@
                     <label for="password" class="block mb-1 font-medium">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter your password..." class="w-full p-2 border rounded-lg">
                 </div>
+                <div>
+                    <label for="confirmedpassword" class="block mb-1 font-medium">Confirm password</label>
+                    <input type="password" id="confirmedPassword" name="confirmedPassword" placeholder="Confirm your password..." class="w-full p-2 border rounded-lg">
+                </div>
                 <div class="font-medium">
                     <p>Your password must contain:</p>
                     <ul class="list-disc pl-6">
@@ -55,12 +59,6 @@
                 <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
                     Signup
                 </button>
-                <div>
-                    <a href="#" class="p-2 font-medium hover:underline">
-                        Forgot your password?
-                    </a>
-                </div>
-                
             </form>
         </div>
     </div>
