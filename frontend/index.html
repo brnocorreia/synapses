@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        .load {
+            width: 70px;
+            height: 70px;
+            margin: 110px auto 0;
+            border:solid 10px #8822aa;
+            border-radius: 50%;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+             -webkit-transition: all 0.5s ease-in;
+            -webkit-animation-name:             rotate; 
+            -webkit-animation-duration:         1.0s; 
+            -webkit-animation-iteration-count:  infinite;
+            -webkit-animation-timing-function: linear;
+                
+                 transition: all 0.5s ease-in;
+            animation-name:             rotate; 
+            animation-duration:         1.0s; 
+            animation-iteration-count:  infinite;
+            animation-timing-function: linear; 
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans antialised">
+    <!-- NavBar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+        <div>
+            <h1 class="text-3xl font-bold">Synapses</h1>
+        </div>
+        <div>
+            <a href="#" class="text-white text-xl hover:underline">Logout</a>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- Main -->
+    <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md ">
+
+            <!-- Introduction section -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Welcome to Synapses.</h2>
+                <p class="text-gray-700">
+                    Your best friend when it comes to managing large logistics chains. Organize your goals involving incoming and outgoing orders. Create pipelines, monitor your demands and optimize your time.
+                </p>
+            </div>
+
+            <br>
+            <!-- Track ID section -->
+            <div>
+                <h2 class="text-xl mb-4 font-semibold mx-auto text-center"> Enter order track ID</h2>
+                <div class="flex space-x-4">
+                    <input id="oderTrackId" type="text" placeholder="Paste the order track ID here..." class="flex-grow p-2 border border-blue-400 rounded-l-md">
+                    <button id="trackOrderButton" class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors">Track</button>
+                </div>
+            </div>
+            <!-- section for loading circle -->
+            <div style="display: none;" id="loading-circle" class="load">
+
+            </div>
+            <!-- Tracked order display section -->
+            <section class="mt-10 flex-grow">
+                <h2 class="text-xl mb-4 font-semibold text-center">Tracked order informations</h2>
+                <div id="orderInformation" class="mt-2 text-gray-700 space-y-4">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="flex justify-center items-center mt-10 space-x-4">
+        <a href="#" class="w-64 bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 flex flex-col">
+    
+            <!-- Option 1: Register a new order -->
+            <div href="#" class="text-center">
+                <h2 class="text-xl font-semibold mb-4">Past tracks</h2>
+                <p class="text-gray-700">
+                    History of all your past orders tracks
+                </p>
+            </div>
+    
+        </a>
+    
+        <a href="#" class="w-64 bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 flex flex-col">
+    
+            <!-- Option 2: Register a new order -->
+            <div href="#" class="text-center">
+                <h2 class="text-xl font-semibold mb-4">Track order</h2>
+                <p class="text-gray-700">
+                    History of all your past orders tracks
+                </p>
+            </div>
+    
+        </a>
+    </div>
+    <br>
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+        Powered by <a href="https://github.com/brnocorreia" class="hover:underline">Bruno Correia</a>
+    </footer>
+
+    <script>
+
+    </script>
+</body>
+</html>
