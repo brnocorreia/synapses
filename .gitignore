@@ -1,0 +1,46 @@
+# Arquivos e pastas gerados pelo Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambiente virtual do Python (por exemplo, virtualenv)
+venv/
+env/
+*.env
+
+# Arquivos gerados pelo pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ambiente virtual do Python usando o pipenv
+Pipfile
+Pipfile.lock
+
+# Arquivos e pastas gerados por editores/IDEs (exemplos)
+.idea/
+.vscode/
+
+# Logs e arquivos de saída
+*.log
+*.pot
+*.pyc
+*.swp
+*.swo
+
+# Arquivos temporários
+*~
+*.bak
+*.tmp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos e pastas específicos para projetos HTML (exemplos)
+node_modules/
+dist/
+build/
+
+# Cache do NPM
+.npm/
